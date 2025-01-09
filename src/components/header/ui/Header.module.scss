@@ -1,0 +1,47 @@
+@use "../../../shared/styles/colors" as c;
+@use "../../../shared/styles/spacings" as s;
+@import "../../../shared/styles/mixins";
+
+.Header {
+  width: 100%;
+  padding: s.$mid-large s.$ultra-large;
+  background: c.$black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Title {
+  @include Text_White(36px, 700);
+}
+
+.Button {
+  @include Text_White(20px, 400);
+
+  padding: s.$small s.$mid-small;
+  background: c.$black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: s.$small;
+  border: 0;
+  outline: 0;
+  border-radius: s.$small;
+  cursor: pointer;
+
+  &:active {
+    @include Text_Black(20px, 400);
+    background: c.$gray-light !important;
+  }
+
+  &:hover {
+    @include Text_Black(20px, 400);
+    background: c.$white;
+  }
+}
+
+.Icon {
+  width: 35px;
+  height: 35px;
+  background: c.$white;
+}
