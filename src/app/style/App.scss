@@ -1,0 +1,16 @@
+@use "../../shared/styles/colors" as c;
+@use "../../shared/styles/spacings" as s;
+@import "../../shared/styles/mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans", serif;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background: c.$white;
+}
