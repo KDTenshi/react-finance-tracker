@@ -1,0 +1,80 @@
+.Header {
+  width: 100%;
+  padding: 25px 75px;
+  background: #212529;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Title {
+  color: #f8f9fa;
+  font-size: 36px;
+  font-weight: 700;
+}
+.Title::-moz-selection {
+  color: #212529;
+  background: #f8f9fa;
+}
+.Title::selection {
+  color: #212529;
+  background: #f8f9fa;
+}
+
+.Button {
+  color: #f8f9fa;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px 15px;
+  background: #212529;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.Button::-moz-selection {
+  color: #212529;
+  background: #f8f9fa;
+}
+.Button::selection {
+  color: #212529;
+  background: #f8f9fa;
+}
+.Button:active {
+  color: #212529;
+  font-size: 20px;
+  font-weight: 400;
+  background: #dee2e6 !important;
+}
+.Button:active::-moz-selection {
+  color: #f8f9fa;
+  background: #212529;
+}
+.Button:active::selection {
+  color: #f8f9fa;
+  background: #212529;
+}
+.Button:hover {
+  color: #212529;
+  font-size: 20px;
+  font-weight: 400;
+  background: #f8f9fa;
+}
+.Button:hover::-moz-selection {
+  color: #f8f9fa;
+  background: #212529;
+}
+.Button:hover::selection {
+  color: #f8f9fa;
+  background: #212529;
+}
+
+.Icon {
+  width: 35px;
+  height: 35px;
+  background: #f8f9fa;
+}/*# sourceMappingURL=Header.module.css.map */
