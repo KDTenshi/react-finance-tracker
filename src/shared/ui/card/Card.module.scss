@@ -1,0 +1,10 @@
+@use "../../styles/colors" as c;
+@use "../../styles/spacings" as s;
+@import "../../styles/mixins";
+
+.Card {
+  width: 100%;
+  background: c.$gray-light;
+  padding: s.$mid-small s.$mid-large;
+  border-radius: s.$mid-small;
+}
