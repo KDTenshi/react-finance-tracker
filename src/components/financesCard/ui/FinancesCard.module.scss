@@ -1,0 +1,74 @@
+@use "../../../shared/styles/colors" as c;
+@use "../../../shared/styles/spacings" as s;
+@import "../../../shared/styles/mixins";
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: s.$medium;
+}
+
+.Title {
+  @include Text_Black(24px, 700);
+
+  width: 100%;
+}
+
+.Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: s.$small;
+}
+
+.Button {
+  @include Text_Black(20px, 400);
+
+  padding: s.$small s.$mid-small;
+  border-radius: s.$small;
+  background: c.$gray-light;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+
+  &:hover {
+    background: c.$white;
+  }
+
+  &:active {
+    background: c.$gray-light !important;
+  }
+}
+
+.Item {
+  width: 100%;
+  background: c.$gray-light;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: s.$small s.$medium;
+  border-radius: s.$small;
+
+  &:hover {
+    background: c.$white;
+  }
+}
+
+.Text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: s.$small;
+}
+
+.Icon {
+  width: 35px;
+  height: 35px;
+  background: c.$black;
+}
+
+.Name,
+.Amount {
+  @include Text_Gray(20px, 400);
+}
